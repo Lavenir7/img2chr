@@ -38,7 +38,7 @@ $ pkg install ncurses-utils # on termux
 ## Install
 
 ### download the script file
-- Clone this repositories to your local.
+- Clone this repository to your local.
 
 ```sh
 $ git clone https://github.com/Lavenir7/img2chr
