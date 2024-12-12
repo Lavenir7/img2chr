@@ -34,6 +34,7 @@ $ sudo pip install pillow
 
 ## Install
 
+### download the script file
 - Clone this repositories to your local.
 
 ```sh
@@ -43,7 +44,20 @@ $ git clone https://github.com/Lavenir7/img2chr
 - Or just download the script file.
 
 ```sh
-curl -sSL https://github.com/Lavenir7/img2chr/raw/refs/heads/master/script/img2chr
+$ curl -sSL https://github.com/Lavenir7/img2chr/raw/refs/heads/main/script/img2chr
+```
+
+### add to path
+
+make sure `/usr/local/bin/` is in your path
+```sh
+$ sudo mv img2chr /usr/local/bin/img2chr
+```
+
+or move script file directly on the `/usr/bin/` (:caution: exercise caution!)
+```sh
+$ ls /usr/bin/ | grep img2chr # check to avoid overwriting other file
+$ sudo mv img2chr /usr/bin/img2chr
 ```
 
 ## Usage
