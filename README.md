@@ -67,7 +67,7 @@ $ sudo mv img2chr /usr/bin/img2chr
 
 - **normal**
 
-show image:
+print the image:
 ```sh
 $ img2chr example.jpg
 ```

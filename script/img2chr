@@ -19,10 +19,8 @@ OPTION(s):
     -h, --help            Show the help document
 
 Example:
-    img2chr -w 200 -x # /home/name/Pictures/example.jpg
-        -> Displays the image example.jpg in a mode with a maximum width of 200 pixels and a pixel character of #.
-
-Author's github homepage: https://github.com/Lavenir7/
+    img2chr -w 200 -x # example.jpg
+        -> Print the image example.jpg in a mode with a maximum width of 200 pixels and a pixel character of #.
 
 """
 MAXWIDTH = 10000
