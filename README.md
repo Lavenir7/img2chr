@@ -4,33 +4,36 @@
 
 ## Introduction
 
-A program that prints images as characters. (by python3)
+A program that prints images as characters.
 
+> [!Note]
 > This project only contain a single file.
 
 ## Screenshot
+
 ![normal](./screenshot/normal.png)
+
 ![withparms](./screenshot/withparms.png)
 
 ## Dependencies
 
-- python3-package: `pillow`
+- **Python3-package**  `pillow`
 
 ```sh
 $ sudo pip install pillow
 ```
 
-- (optional) linux command: `tput`
+- **Linux tool**  `tput`  [optional]
 
+> [!Note]
 > `img2chr` uses `tput` to control the print width.
-> 
+
+> [!Tip]
 > You can also manually control the print width using the `-x` option.
 
-    - install `tput` on `termux`
-
-    ```sh
-    $ pkg install ncurses-utils
-    ```
+```sh
+$ pkg install ncurses-utils # on termux
+```
 
 ## Install
 
@@ -44,7 +47,7 @@ $ git clone https://github.com/Lavenir7/img2chr
 - Or just download the script file.
 
 ```sh
-$ curl -sSL https://github.com/Lavenir7/img2chr/raw/refs/heads/main/script/img2chr
+$ curl -fL https://github.com/Lavenir7/img2chr/raw/refs/heads/main/script/img2chr
 ```
 
 ### add to path
@@ -56,25 +59,26 @@ $ sudo mv img2chr /usr/local/bin/img2chr
 
 or move script file directly on the `/usr/bin/` (:caution: exercise caution!)
 ```sh
-$ ls /usr/bin/ | grep img2chr # check to avoid overwriting other file
+$ ls /usr/bin/ | grep "img2chr" # check to avoid overwriting other file
 $ sudo mv img2chr /usr/bin/img2chr
 ```
 
 ## Usage
 
-- normal
+- **normal**
 
 show image:
 ```sh
 $ img2chr example.jpg
 ```
 
-- with parameters
+- **with parameters**
 
-print the image with `+` (`-x "+"`) at the widest width of `25` (`-w 25`)
+print the image with `+` at the widest width of `25`
 ```sh
 $ img2chr -w 25 -x "+" example.jpg
 ```
+> [!Tip]
 > you can view descriptions of other parameters by `img2chr -h`
 
 ## End
