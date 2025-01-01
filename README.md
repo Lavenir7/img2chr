@@ -11,6 +11,9 @@ A program that prints images as characters.
 
 ## Screenshot
 
+> [!Note]
+> reference only, version for 1.1.1
+
 ![normal](./screenshot/normal.png)
 
 ![withparms](./screenshot/withparms.png)
